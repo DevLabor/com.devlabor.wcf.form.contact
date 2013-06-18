@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd">
+    <category name="wcf.header">
+        <item name="wcf.header.menu.contact"><![CDATA[Kontakt]]></item>
+    </category>    
+	
+	<category name="wcf.contact">
+        <item name="wcf.contact.title"><![CDATA[Kontakt]]></item>
+        <item name="wcf.contact.general"><![CDATA[Allgemein]]></item>
+        <item name="wcf.contact.subject"><![CDATA[Betreff]]></item>
+        <item name="wcf.contact.senderEmail"><![CDATA[Absender]]></item>
+        <item name="wcf.contact.senderEmail.description"><![CDATA[Geben Sie Ihre E-Mail-Adresse an.]]></item>
+        <item name="wcf.contact.message"><![CDATA[Nachricht]]></item>
+        <item name="wcf.contact.redirect.message"><![CDATA[Vielen Dank für Ihre Nachricht! Sie werden nun automatisch weitergeleitet.]]></item>
+    </category>
+</language>
