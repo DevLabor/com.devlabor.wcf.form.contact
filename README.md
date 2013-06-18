@@ -1,5 +1,5 @@
-com.devlabor.wcf.form.contact
-=============================
+Contact Form
+============
 
 A Contact Form based on WoltLab Community Framework 2.0
 
