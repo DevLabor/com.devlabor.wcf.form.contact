@@ -17,6 +17,11 @@ use wcf\util\HeaderUtil;
  */
 class ContactForm extends MailForm {
 	/**
+	 * @see	wcf\form\RecaptchaForm::$useCaptcha
+	 */
+	public $useCaptcha = CONTACT_USE_CAPTCHA;
+	
+	/**
 	 * @see wcf\page\IPage::readParameters()
 	 */
 	public function readParameters() {
