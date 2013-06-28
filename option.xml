@@ -6,6 +6,7 @@
 				<categoryname>security.antispam</categoryname>
 				<optiontype>boolean</optiontype>
 				<options>module_system_recaptcha</options>
+				<defaultvalue>1</defaultvalue>
 			</option>
 		</options>
 	</import>
