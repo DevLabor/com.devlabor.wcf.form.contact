@@ -60,7 +60,7 @@ class ContactForm extends MailForm {
 		$this->saved();
 
 		// forward to index
-		HeaderUtil::delayedRedirect(LinkHandler::getInstance()->getLink('Index'), WCF::getLanguage()->get('wcf.contact.redirect.message'));
+		HeaderUtil::delayedRedirect(null, WCF::getLanguage()->get('wcf.contact.redirect.message'));
 		exit;
 	}
 	
