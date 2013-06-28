@@ -42,7 +42,7 @@ class ContactForm extends MailForm {
 	public function readData() {
 		AbstractForm::readData();
 
-		// don't trigger MailForm::readParameters()
+		// don't trigger MailForm::readData()
 	}	
 
 	/**
@@ -70,6 +70,6 @@ class ContactForm extends MailForm {
 	public function show() {
 		AbstractForm::show();
 		
-		// don't trigger MailForm::readParameters()
+		// don't trigger MailForm::show()
 	}	
 }
