@@ -73,6 +73,10 @@ class ContactForm extends MailForm {
 	 * @see	wcf\page\IPage::show()
 	 */
 	public function show() {
+		if (!WCF::getSession()->getPermission('user.contact.requireCaptcha')) {
+			$this->useCaptcha = false;
+		}
+		
 		AbstractForm::show();
 		
 		// don't trigger MailForm::show()
