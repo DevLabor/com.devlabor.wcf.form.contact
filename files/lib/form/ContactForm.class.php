@@ -16,6 +16,12 @@ use wcf\util\HeaderUtil;
  * @subpackage	form
  */
 class ContactForm extends MailForm {
+
+	/**
+	 * @see	\wcf\page\AbstractPage::$enableTracking
+	 */
+	public $enableTracking = true;
+		
 	/**
 	 * @see	wcf\form\RecaptchaForm::$useCaptcha
 	 */
