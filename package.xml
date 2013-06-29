@@ -3,8 +3,8 @@
     <packageinformation>
         <packagename><![CDATA[Contact Form]]></packagename>
         <packagedescription><![CDATA[Shows a contact form.]]></packagedescription>
-        <version>1.0.1</version>
-        <date>2013-06-28</date>
+        <version>1.0.2</version>
+        <date>2013-06-29</date>
         <plugin>com.woltlab.wcf</plugin>
     </packageinformation>
 
@@ -29,5 +29,9 @@
         <instruction type="file">files.tar</instruction>
 		<instruction type="option">option.xml</instruction>
         <instruction type="language">lang/*.xml</instruction>
+    </instructions>
+	
+    <instructions type="update" fromversion="1.0.1">
+        <instruction type="file">files.tar</instruction>
     </instructions>
 </package>
