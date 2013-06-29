@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/object-type.xsd">
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/objectType.xsd">
 	<import>
 		<type>
 			<name>com.devlabor.wcf.form.contact</name>
 			<definitionname>com.woltlab.wcf.user.online.location</definitionname>
-			<controller>wcf\form\ContactForm</controller>
+			<controller><![CDATA[wcf\form\ContactForm]]></controller>
 			<languagevariable>wcf.user.usersOnline.location.ContactForm</languagevariable>
 		</type>
 	</import>
