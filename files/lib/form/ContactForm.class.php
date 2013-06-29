@@ -68,6 +68,11 @@ class ContactForm extends MailForm {
 		HeaderUtil::delayedRedirect(null, WCF::getLanguage()->get('wcf.contact.redirect.message'));
 		exit;
 	}
+
+	/**
+	 * @see	wcf\form\IForm::$activeMenuItem
+	 */
+	public $activeMenuItem = 'wcf.header.menu.contact';
 	
 	/**
 	 * @see	wcf\page\IPage::show()
