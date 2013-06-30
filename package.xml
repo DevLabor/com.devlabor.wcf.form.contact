@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename><![CDATA[Contact Form]]></packagename>
 		<packagedescription><![CDATA[Shows a contact form.]]></packagedescription>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<date>2013-06-28</date>
 		<plugin>com.woltlab.wcf</plugin>
 	</packageinformation>

@@ -16,7 +16,6 @@ use wcf\util\HeaderUtil;
  * @subpackage	form
  */
 class ContactForm extends MailForm {
-
 	/**
 	 * @see	\wcf\page\AbstractPage::$enableTracking
 	 */
@@ -84,6 +83,11 @@ class ContactForm extends MailForm {
 	 * @see	wcf\page\IPage::show()
 	 */
 	public function show() {
+		// enable captcha only for guests
+		if (CONTACT_USE_CAPTCHA) {
+			$this->useCaptcha = !(bool)(WCF::getUser()->userID);
+		}
+	
 		AbstractForm::show();
 		
 		// don't trigger MailForm::show()
