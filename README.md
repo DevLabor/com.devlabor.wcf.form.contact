@@ -5,7 +5,7 @@ A Contact Form based on WoltLab Community Framework 2.0
 
 Download
 --------
-The current version of this plugin can be downloaded [from our website](http://devlabor.com/download/com.devlabor.wcf.form.contact.tar.gz).
+The current version of this plugin can be downloaded [form GitHub releases](https://github.com/DevLabor/com.devlabor.wcf.form.contact/releases).
 
 License
 -------
