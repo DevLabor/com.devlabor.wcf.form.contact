@@ -25,6 +25,11 @@ class ContactForm extends MailForm {
 	 * @see	wcf\form\RecaptchaForm::$useCaptcha
 	 */
 	public $useCaptcha = CONTACT_USE_CAPTCHA;
+
+	/**
+	 * @see	wcf\page\AbstractPage::$activeMenuItem
+	*/
+	public $activeMenuItem = 'wcf.header.menu.contact';	
 	
 	/**
 	 * @see wcf\page\IPage::readParameters()
@@ -74,10 +79,6 @@ class ContactForm extends MailForm {
 		exit;
 	}
 
-	/**
-	 * @see	wcf\page\AbstractPage::$activeMenuItem
-	*/
-	public $activeMenuItem = 'wcf.header.menu.contact';
 	
 	/**
 	 * @see	wcf\page\IPage::show()
@@ -88,8 +89,7 @@ class ContactForm extends MailForm {
 			$this->useCaptcha = !(bool)(WCF::getUser()->userID);
 		}
 	
+		// don't trigger MailForm::show()	
 		AbstractForm::show();
-		
-		// don't trigger MailForm::show()
 	}	
 }
