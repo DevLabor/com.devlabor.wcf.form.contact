@@ -15,16 +15,14 @@
 
 {include file='userNotice'}
 
-{if $errorField}
-    <p class="error">{lang}wcf.global.form.error{/lang}</p>
-{/if}
+{include file='formError'}
 
 <div class="contentNavigation">
     {hascontent}
         <nav>
             <ul>
                 {content}
-                {event name='contentNavigationButtons'}
+                	{event name='contentNavigationButtons'}
                 {/content}
             </ul>
         </nav>
@@ -106,6 +104,7 @@
 
     <div class="formSubmit">
         <input type="submit" value="{lang}wcf.global.button.submit{/lang}" accesskey="s" />
+		{@SECURITY_TOKEN_INPUT_TAG}
     </div>
 </form>
 

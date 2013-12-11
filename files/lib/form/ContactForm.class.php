@@ -1,8 +1,6 @@
 <?php
 namespace wcf\form;
-use wcf\data\user\User;
 use wcf\system\mail\Mail;
-use wcf\system\request\LinkHandler;
 use wcf\system\WCF;
 use wcf\util\HeaderUtil;
 
@@ -28,8 +26,8 @@ class ContactForm extends MailForm {
 
 	/**
 	 * @see	wcf\page\AbstractPage::$activeMenuItem
-	*/
-	public $activeMenuItem = 'wcf.header.menu.contact';	
+	 */
+	public $activeMenuItem = 'wcf.header.menu.contact';
 	
 	/**
 	 * @see wcf\page\IPage::readParameters()

@@ -3,9 +3,8 @@
 	<packageinformation>
 		<packagename><![CDATA[Contact Form]]></packagename>
 		<packagedescription><![CDATA[Shows a contact form.]]></packagedescription>
-		<version>1.0.2</version>
-		<date>2013-06-28</date>
-		<plugin>com.woltlab.wcf</plugin>
+		<version>1.0.3</version>
+		<date>2013-12-11</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -14,7 +13,7 @@
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.0.0 RC 1">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
@@ -22,14 +21,14 @@
 		<instruction type="template">templates.tar</instruction>
 		<instruction type="pageMenu">pageMenu.xml</instruction>
 		<instruction type="option">option.xml</instruction>
-		<instruction type="language">lang/*.xml</instruction>
 		<instruction type="objectType">objectType.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
 	</instructions>
 	
 	<instructions type="update" fromversion="*">
 		<instruction type="file">files.tar</instruction>
 		<instruction type="option">option.xml</instruction>
 		<instruction type="objectType">objectType.xml</instruction>
-		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
 	</instructions>
 </package>
