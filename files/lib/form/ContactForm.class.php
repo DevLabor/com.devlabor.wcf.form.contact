@@ -63,7 +63,7 @@ class ContactForm extends MailForm {
 	 */
 	public function save() {	
 		AbstractForm::save();
-	
+
 		// build mail
 		$mail = new Mail(array(MAIL_FROM_NAME => MAIL_ADMIN_ADDRESS), $this->subject, $this->message);
 		$mail->setLanguage(WCF::getLanguage());
@@ -86,7 +86,7 @@ class ContactForm extends MailForm {
 		if (CONTACT_USE_CAPTCHA) {
 			$this->useCaptcha = !(bool)(WCF::getUser()->userID);
 		}
-	
+
 		// don't trigger MailForm::show()	
 		AbstractForm::show();
 	}	
