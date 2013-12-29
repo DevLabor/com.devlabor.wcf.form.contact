@@ -14,6 +14,8 @@ use wcf\util\HeaderUtil;
  * @subpackage	form
  */
 class ContactForm extends MailForm {
+	const AVAILABLE_DURING_OFFLINE_MODE = OFFLINE_CONTACT_FORM;
+
 	/**
 	 * @see	\wcf\page\AbstractPage::$enableTracking
 	 */
@@ -64,8 +66,16 @@ class ContactForm extends MailForm {
 	public function save() {	
 		AbstractForm::save();
 
+		// set mail from
+		if (WCF::getUser()->userID) {
+			$from = array(WCF::getUser()->username => WCF::getUser()->email);
+		}
+		else {
+			$from = $this->email;
+		}
+
 		// build mail
-		$mail = new Mail(array(MAIL_FROM_NAME => MAIL_ADMIN_ADDRESS), $this->subject, $this->message);
+		$mail = new Mail(array(MAIL_FROM_NAME => MAIL_ADMIN_ADDRESS), $this->subject, $this->message, $from);
 		$mail->setLanguage(WCF::getLanguage());
 		$mail->setHeader('Reply-To: '.$this->email);
 		$mail->send();

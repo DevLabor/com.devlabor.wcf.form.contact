@@ -8,6 +8,11 @@
 				<options>module_system_recaptcha</options>
 				<defaultvalue>1</defaultvalue>
 			</option>
+			<option name="offline_contact_form">
+				<categoryname>general.offline</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
 		</options>
 	</import>
 </data>
