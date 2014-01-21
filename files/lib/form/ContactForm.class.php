@@ -1,6 +1,7 @@
 <?php
 namespace wcf\form;
 use wcf\system\mail\Mail;
+use wcf\system\request\LinkHandler;
 use wcf\system\WCF;
 use wcf\util\HeaderUtil;
 
@@ -83,7 +84,7 @@ class ContactForm extends MailForm {
 		$this->saved();
 
 		// forward to index
-		HeaderUtil::delayedRedirect(null, WCF::getLanguage()->get('wcf.contact.redirect.message'));
+		HeaderUtil::delayedRedirect(LinkHandler::getInstance()->getLink(''), WCF::getLanguage()->get('wcf.contact.redirect.message'));
 		exit;
 	}
 
