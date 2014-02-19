@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename><![CDATA[Contact Form]]></packagename>
 		<packagedescription><![CDATA[Shows a contact form.]]></packagedescription>
-		<version>1.0.5</version>
+		<version>1.0.6</version>
 		<date>2014-01-21</date>
 	</packageinformation>
 
@@ -27,6 +27,7 @@
 	
 	<instructions type="update" fromversion="*">
 		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
 		<instruction type="option">option.xml</instruction>
 		<instruction type="objectType">objectType.xml</instruction>
 		<instruction type="language">language/*.xml</instruction>

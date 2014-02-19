@@ -8,6 +8,8 @@
 		<item name="wcf.contact.title"><![CDATA[Kontakt]]></item>
 		<item name="wcf.contact.general"><![CDATA[Allgemein]]></item>
 		<item name="wcf.contact.subject"><![CDATA[Betreff]]></item>
+		<item name="wcf.contact.categoryMail"><![CDATA[Kategorie]]></item>
+		<item name="wcf.contact.categoryMail.error.invalid"><![CDATA[Die ausgewählte Kategorie ist ungültig.]]></item>
 		<item name="wcf.contact.senderEmail"><![CDATA[Absender]]></item>
 		<item name="wcf.contact.senderEmail.description"><![CDATA[Geben Sie Ihre E-Mail-Adresse an.]]></item>
 		<item name="wcf.contact.message"><![CDATA[Nachricht]]></item>
@@ -15,6 +17,9 @@
 	</category>
 	
 	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.general.contact"><![CDATA[Kontaktformular]]></item>
+		<item name="wcf.acp.option.contact_mail_categories"><![CDATA[Kategorien]]></item>
+		<item name="wcf.acp.option.contact_mail_categories.description"><![CDATA[Geben Sie die E-Mail-Adressen und Kategorien untereinander an. Die E-Mail und Bezeichnung muss mit einem Doppelpunkt getrennt sein (z.B. office@devlabor.com:Anfrage).]]></item>
 		<item name="wcf.acp.option.contact_use_captcha"><![CDATA[reCAPTCHA in Kontaktformular aktivieren]]></item>
 		<item name="wcf.acp.option.offline_contact_form"><![CDATA[Kontaktformular im Wartungsmodus aktivieren]]></item>
 	</category>

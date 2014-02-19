@@ -71,6 +71,28 @@
                 </dl>
             {/if}
 
+			{if CONTACT_MAIL_CATEGORIES && $availableCategories|count > 0}
+				<dl{if $errorField == 'categoryMail'} class="formError"{/if}>
+					<dt><label for="categoryMail">{lang}wcf.contact.categoryMail{/lang}</label></dt>
+					<dd>
+						<select name="categoryMail" id="categoryMail">
+							{foreach from=$availableCategories key=__mail item=__category}
+								<option value="{$__mail}"{if $categoryMail == $__mail} selected="selected"{/if}>{lang}{$__category}{/lang}</option>
+							{/foreach}
+						</select>
+						{if $errorField == 'categoryMail'}
+							<small class="innerError">
+								{if $errorType == 'empty'}
+									{lang}wcf.global.form.error.empty{/lang}
+								{else}
+									{lang}wcf.contact.categoryMail.error.{$errorType}{/lang}
+								{/if}
+							</small>
+						{/if}
+					</dd>
+				</dl>
+			{/if}
+
             {event name='informationFields'}
         </fieldset>
 

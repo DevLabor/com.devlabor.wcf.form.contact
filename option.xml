@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
 	<import>
+		<categories>
+			<category name="general.contact">
+				<parent>general</parent>
+			</category>
+		</categories>
 		<options>
 			<option name="contact_use_captcha">
 				<categoryname>security.antispam</categoryname>
@@ -12,6 +17,11 @@
 				<categoryname>general.offline</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
+			</option>
+
+			<option name="contact_mail_categories">
+				<categoryname>general.contact</categoryname>
+				<optiontype>textarea</optiontype>
 			</option>
 		</options>
 	</import>
