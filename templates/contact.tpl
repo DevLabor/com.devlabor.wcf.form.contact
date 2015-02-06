@@ -29,10 +29,33 @@
     {/hascontent}
 </div>
 
+<div class="container containerPadding marginTop">
+	<fieldset>
+		<legend>{lang}wcf.contact.address{/lang}</legend>
+
+		<dl>
+			<dt>{lang}wcf.contact.address{/lang}</dt>
+			<dd>
+				<address>{@CONTACT_COMPANY}<br/>
+					{@CONTACT_NAME}<br/>
+					{@CONTACT_STREET}<br/>
+					{@CONTACT_ZIPCODE} {@CONTACT_CITY}<br/>
+					{@CONTACT_COUNTRY}</address>
+			</dd>
+			<dt>{lang}wcf.contact.phone{/lang}</dt>
+			<dd>{@CONTACT_PHONE}</dd>
+			<dt>{lang}wcf.contact.fax{/lang}</dt>
+			<dd>{@CONTACT_FAX}</dd>
+			<dt>{lang}wcf.contact.mail{/lang}</dt>
+			<dd>{@CONTACT_MAIL}</dd>
+		</dl>
+	</fieldset>
+</div>
+
 <form method="post" action="{link controller='Contact'}{/link}">
     <div class="container containerPadding marginTop">
         <fieldset>
-            <legend>{lang}wcf.contact.general{/lang}</legend>
+            <legend>{lang}wcf.contact.message{/lang}</legend>
 
             <dl{if $errorField == 'subject'} class="formError"{/if}>
                 <dt><label for="subject">{lang}wcf.contact.subject{/lang}</label></dt>
@@ -94,12 +117,9 @@
 			{/if}
 
             {event name='informationFields'}
-        </fieldset>
 
-        <fieldset>
-            <legend><label for="message">{lang}wcf.contact.message{/lang}</label></legend>
-
-            <dl class="wide{if $errorField == 'message'} formError{/if}">
+            <dl class="{if $errorField == 'message'} formError{/if}">
+				<dt><label for="message">{lang}wcf.contact.message{/lang}</label></dt>
                 <dd>
                     <textarea rows="15" cols="40" name="message" id="message" required="required">{$message}</textarea>
                     {if $errorField == 'message'}

@@ -45,7 +45,7 @@ class ContactForm extends MailForm {
 	 * @see wcf\page\IPage::readParameters()
 	 */
 	public function readParameters() {
-		AbstractForm::readParameters();
+		RecaptchaForm::readParameters();
 
 		// don't trigger MailForm::readParameters()
 	}
@@ -85,7 +85,7 @@ class ContactForm extends MailForm {
 	 * @see	wcf\page\IPage::readData()
 	 */
 	public function readData() {
-		AbstractForm::readData();
+		RecaptchaForm::readData();
 
 		// don't trigger MailForm::readData()
 	}
@@ -106,7 +106,7 @@ class ContactForm extends MailForm {
 	 * @see wcf\form\IForm::save()
 	 */
 	public function save() {	
-		AbstractForm::save();
+		RecaptchaForm::save();
 
 		// set recipient
 		if (!empty($this->categoryMail)) {
@@ -148,6 +148,6 @@ class ContactForm extends MailForm {
 		}
 
 		// don't trigger MailForm::show()	
-		AbstractForm::show();
+		RecaptchaForm::show();
 	}	
 }

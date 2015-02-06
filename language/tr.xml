@@ -2,19 +2,24 @@
 <language languagecode="tr" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd">
 	<category name="wcf.header">
 		<item name="wcf.header.menu.contact"><![CDATA[İletişim]]></item>
-	</category>    
-	
+	</category>
+
 	<category name="wcf.contact">
 		<item name="wcf.contact.title"><![CDATA[İletişim]]></item>
 		<item name="wcf.contact.general"><![CDATA[Genel]]></item>
 		<item name="wcf.contact.subject"><![CDATA[Başlık]]></item>
+		<item name="wcf.contact.categoryMail"><![CDATA[Kategori]]></item>
+		<item name="wcf.contact.categoryMail.description"><![CDATA[Bu Kategoriyi secmeye hakkınız yok.]]></item>
 		<item name="wcf.contact.senderEmail"><![CDATA[Gönderen]]></item>
 		<item name="wcf.contact.senderEmail.description"><![CDATA[Buraya lütfen E Mail adresinizi yazınız.]]></item>
 		<item name="wcf.contact.message"><![CDATA[Mesaj]]></item>
 		<item name="wcf.contact.redirect.message"><![CDATA[Mesajınız başarı ile gönderilmiştir. Anasayfaya yönlendiriliyorsunuz...]]></item>
 	</category>
-	
+
 	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.general.contact"><![CDATA[İletişim Formu]]></item>
+		<item name="wcf.acp.option.contact_mail_categories"><![CDATA[Kategoriler]]></item>
+		<item name="wcf.acp.option.contact_mail_categories.description"><![CDATA[Lütfen Kategorileri ve E-Mail adresleri alt alta yazınız. E-Mail adresiniz ve acıklaması (başlığı) cift nokta ile ayırmanız gerekiyor (yani böyle office@devlabor.com:Soru).]]></item>
 		<item name="wcf.acp.option.contact_use_captcha"><![CDATA[reCAPTCHA İletişim Formunda kullan]]></item>
 		<item name="wcf.acp.option.offline_contact_form"><![CDATA[Forum bakımda olduğunda iletişim Formu kullan]]></item>
 	</category>
