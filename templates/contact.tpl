@@ -29,28 +29,37 @@
     {/hascontent}
 </div>
 
+{if CONTACT_ADDRESS != '' || CONTACT_PHONE != '' || CONTACT_FAX != '' || CONTACT_MAIL != ''}
 <div class="container containerPadding marginTop">
 	<fieldset>
 		<legend>{lang}wcf.contact.address{/lang}</legend>
 
 		<dl>
+            {if CONTACT_ADDRESS != ''}
 			<dt>{lang}wcf.contact.address{/lang}</dt>
 			<dd>
-				<address>{@CONTACT_COMPANY}<br/>
-					{@CONTACT_NAME}<br/>
-					{@CONTACT_STREET}<br/>
-					{@CONTACT_ZIPCODE} {@CONTACT_CITY}<br/>
-					{@CONTACT_COUNTRY}</address>
+				<address>{@CONTACT_ADDRESS|nl2br}</address>
 			</dd>
+            {/if}
+
+            {if CONTACT_PHONE != ''}
 			<dt>{lang}wcf.contact.phone{/lang}</dt>
 			<dd>{@CONTACT_PHONE}</dd>
+            {/if}
+
+            {if CONTACT_FAX != ''}
 			<dt>{lang}wcf.contact.fax{/lang}</dt>
 			<dd>{@CONTACT_FAX}</dd>
+            {/if}
+
+            {if CONTACT_MAIL != ''}
 			<dt>{lang}wcf.contact.mail{/lang}</dt>
 			<dd>{@CONTACT_MAIL}</dd>
+            {/if}
 		</dl>
 	</fieldset>
 </div>
+{/if}
 
 <form method="post" action="{link controller='Contact'}{/link}">
     <div class="container containerPadding marginTop">

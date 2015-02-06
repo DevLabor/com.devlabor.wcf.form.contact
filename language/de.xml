@@ -5,6 +5,10 @@
 	</category>    
 	
 	<category name="wcf.contact">
+		<item name="wcf.contact.address"><![CDATA[Anschrift]]></item>
+		<item name="wcf.contact.phone"><![CDATA[Telefon]]></item>
+		<item name="wcf.contact.fax"><![CDATA[Fax]]></item>
+		<item name="wcf.contact.mail"><![CDATA[E-Mail]]></item>
 		<item name="wcf.contact.title"><![CDATA[Kontakt]]></item>
 		<item name="wcf.contact.general"><![CDATA[Allgemein]]></item>
 		<item name="wcf.contact.subject"><![CDATA[Betreff]]></item>
@@ -22,6 +26,10 @@
 		<item name="wcf.acp.option.contact_mail_categories.description"><![CDATA[Geben Sie die E-Mail-Adressen und Kategorien untereinander an. Die E-Mail und Bezeichnung muss mit einem Doppelpunkt getrennt sein (z.B. office@devlabor.com:Anfrage).]]></item>
 		<item name="wcf.acp.option.contact_use_captcha"><![CDATA[reCAPTCHA in Kontaktformular aktivieren]]></item>
 		<item name="wcf.acp.option.offline_contact_form"><![CDATA[Kontaktformular im Wartungsmodus aktivieren]]></item>
+		<item name="wcf.acp.option.contact_address"><![CDATA[Anschrift]]></item>
+		<item name="wcf.acp.option.contact_phone"><![CDATA[Telefon]]></item>
+		<item name="wcf.acp.option.contact_fax"><![CDATA[Fax]]></item>
+		<item name="wcf.acp.option.contact_mail"><![CDATA[E-Mail]]></item>
 	</category>
 
 	<category name="wcf.user.usersOnline">

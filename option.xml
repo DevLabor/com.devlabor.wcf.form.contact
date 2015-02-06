@@ -23,6 +23,23 @@
 				<categoryname>general.contact</categoryname>
 				<optiontype>textarea</optiontype>
 			</option>
+
+			<option name="contact_address">
+				<categoryname>general.contact</categoryname>
+				<optiontype>textarea</optiontype>
+			</option>
+			<option name="contact_phone">
+				<categoryname>general.contact</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+			<option name="contact_fax">
+				<categoryname>general.contact</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+			<option name="contact_mail">
+				<categoryname>general.contact</categoryname>
+				<optiontype>text</optiontype>
+			</option>
 		</options>
 	</import>
 </data>
