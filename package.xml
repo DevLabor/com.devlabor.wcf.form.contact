@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename><![CDATA[Contact Form]]></packagename>
 		<packagedescription><![CDATA[Shows a contact form.]]></packagedescription>
-		<version>1.0.7</version>
+		<version>1.1.0</version>
 		<date>2015-02-06</date>
 	</packageinformation>
 
@@ -13,7 +13,7 @@
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.1.0">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
